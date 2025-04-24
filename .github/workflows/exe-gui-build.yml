@@ -18,7 +18,7 @@ jobs:
         with:
           nuitka-version: main
           script-name: transcription.py
-          mode: standalone
+          mode: app
           enable-plugins: tk-inter
       # Uploads artifact
       - name: Upload Artifact
