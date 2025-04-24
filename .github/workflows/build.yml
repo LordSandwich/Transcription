@@ -1,5 +1,6 @@
 name: Test build action
 run-name: Testing a build action
+on: [workflow_dispatch]
 jobs:
   build:
     runs-on: windows-latest
