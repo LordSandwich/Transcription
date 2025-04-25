@@ -1,5 +1,5 @@
-name: exe GUI Build
-run-name: exe GUI Build
+name: Cross Platform GUI Build
+run-name: Cross Platform GUI Build
 on: [workflow_dispatch]
 jobs:
   build:
