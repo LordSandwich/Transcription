@@ -15,6 +15,6 @@ jobs:
 
       - name: listing libraries
         run: |
-          ls -l /Library/Frameworks/Python.framework/Versions/Current/Frameworks/
+          ls -l /Library/Frameworks/Python.framework/Versions/Current/Frameworks/Tcl.framework/
           # python -c "import tkinter; print(f'Tkinter imported successfully. Version: {tkinter.TkVersion}')"
 
