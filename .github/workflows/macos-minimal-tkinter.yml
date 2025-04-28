@@ -13,8 +13,8 @@ jobs:
           python-version: '3.x'
           architecture: 'x64'
 
-      - name: import tkinter
+      - name: listing libraries
         run: |
-          ls -l /Library/Frameworks/Python.framework/Versions/
+          ls -l /Library/Frameworks/Python.framework/Versions/Current/
           # python -c "import tkinter; print(f'Tkinter imported successfully. Version: {tkinter.TkVersion}')"
 
