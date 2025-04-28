@@ -1,0 +1,11 @@
+name: tkinter minimal
+
+on:
+    workflow_dispatch:
+
+jobs:
+  minimal:
+    runs: macos-13
+    steps:
+      - name: import tkinter
+        run: python -c "import tkinter"
