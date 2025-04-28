@@ -12,9 +12,6 @@ jobs:
         with:
           python-version: '3.x'
           architecture: 'x64'
-      - name: Install Depencencies
-        run: |
-          pip install -r requirements.txt -r requirements-dev.txt
 
       - name: import tkinter
         run: |
