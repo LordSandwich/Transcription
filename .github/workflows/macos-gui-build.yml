@@ -20,15 +20,15 @@ jobs:
         run: |
           pip install -r requirements.txt -r requirements-dev.txt
       
-      - name: Build Executable
-        uses: Nuitka/Nuitka-Action@main
-        with:
-          nuitka-version: main
-          script-name: transcription.py
-          mode: app
-          #enable-plugins: tk-inter
-          #          tcl-library-dir: |
-          # /Library/Frameworks/Python.framework/Versions/Current/Frameworks/Tcl.framework/
+      - name: Install pyinstaller
+        run: pip install pyinstaller
+
+      - name: Where am i?
+        run: pwd
+        run: ls -l
+
+      - name: Build executable
+        run: pyinstaller transcription.py
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
