@@ -23,21 +23,17 @@ jobs:
       - name: Install pyinstaller
         run: pip install pyinstaller
 
-      - name: Where am i?
-        run: pwd
-      
-      - name: What's here?
-        run: ls -l
-
       - name: Build executable
         run: pyinstaller transcription.py
+
+      - name: List Dist
+        run: ls -l dist
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: MacOS Build
           path: |
-            build/*.exe
-            build/*.bin
-            build/*.app/**/*
+            dist/*.bin
+            dist/*.app/**/*
           include-hidden-files: true
