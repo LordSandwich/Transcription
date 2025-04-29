@@ -26,17 +26,10 @@ jobs:
       - name: Build executable
         run: pyinstaller -F transcription.py
 
-      - name: List Dist
-        run: ls -l ./dist/transcription/
-
-      - name: TEST List Dist
-        run: ls -l ./dist/transcription/fake
-
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: MacOS Build
           path: |
-            dist/*.bin
-            dist/*.app/**/*
+            dist/transcription
           include-hidden-files: true
