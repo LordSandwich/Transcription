@@ -25,6 +25,8 @@ jobs:
 
       - name: Where am i?
         run: pwd
+      
+      - name: What's here?
         run: ls -l
 
       - name: Build executable
