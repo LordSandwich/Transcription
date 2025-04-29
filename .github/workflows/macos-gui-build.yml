@@ -20,16 +20,13 @@ jobs:
         run: |
           pip install -r requirements.txt -r requirements-dev.txt
       
-      - name: install tk
-        run: brew install python-tk
-
       - name: Build Executable
         uses: Nuitka/Nuitka-Action@main
         with:
           nuitka-version: main
           script-name: transcription.py
           mode: app
-          enable-plugins: tk-inter
+          #enable-plugins: tk-inter
           #          tcl-library-dir: |
           # /Library/Frameworks/Python.framework/Versions/Current/Frameworks/Tcl.framework/
 
