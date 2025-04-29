@@ -31,5 +31,5 @@ jobs:
         with:
           name: MacOS Build
           path: |
-            ist/*.app/**/*
+            dist/*.app/**/*
           include-hidden-files: true
