@@ -1,6 +1,7 @@
 import tkinter as tk
 import datetime as dt
 from tkinter import ttk
+from tkinter import *
 from tkcalendar import Calendar, DateEntry
 from tktimepicker import AnalogPicker, AnalogThemes, constants
 
