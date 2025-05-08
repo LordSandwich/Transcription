@@ -84,30 +84,6 @@ titleLabel['text'] = "On Demand to Transcription helper"
 
 # Create selectors frame widgets
 
-hourLabel = ttk.Label(selectorsFrame)
-hourLabel['text'] = "Hour:"
-
-hourVar = tk.StringVar()
-hourEntry = ttk.Entry(selectorsFrame)
-hourEntry['textvariable'] = hourVar
-hourEntry['width'] = 8
-
-minuteLabel = ttk.Label(selectorsFrame)
-minuteLabel['text'] = "Minute:"
-
-minuteVar = tk.StringVar()
-minuteEntry = ttk.Entry(selectorsFrame)
-minuteEntry['textvariable'] = minuteVar
-minuteEntry['width'] = 8
-
-secondLabel = ttk.Label(selectorsFrame)
-secondLabel['text'] = "Second:"
-
-secondVar = tk.StringVar()
-secondEntry = ttk.Entry(selectorsFrame)
-secondEntry['textvariable'] = secondVar
-secondEntry['width'] = 8
-
 lengthLabel = ttk.Label(selectorsFrame)
 lengthLabel['text'] = "Length (in minutes):"
 
@@ -140,14 +116,14 @@ cal = Calendar(selectorsFrame,
                font="Arial 14",
                selectmode = 'day',
                locale = 'en_AU',
-               date_pattern = 'dd/mm/y'
+               date_pattern = 'dd/mm/y',
+               background = 'black'
                )
 
 # Setup time picker widget
 tp = AnalogPicker(selectorsFrame, type=constants.HOURS12)
 tp_theme = AnalogThemes(tp)
-#tp_theme.setDracula()
-tp_theme.setPurple()
+tp_theme.setDracula()
 			
 # Arrange frames
 topFrame.grid(column=0,row=0)
