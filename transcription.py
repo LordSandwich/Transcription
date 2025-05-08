@@ -146,7 +146,8 @@ cal = Calendar(selectorsFrame,
 # Setup time picker widget
 tp = AnalogPicker(selectorsFrame, type=constants.HOURS12)
 tp_theme = AnalogThemes(tp)
-tp_theme.setDracula()
+#tp_theme.setDracula()
+tp_theme.setPurple()
 			
 # Arrange frames
 topFrame.grid(column=0,row=0)
