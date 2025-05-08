@@ -3,7 +3,8 @@ run-name: MacOS GUI Build
 on: [workflow_dispatch]
 jobs:
   build:
-    runs-on: macos-latest
+    #runs-on: macos-latest
+    runs-on: macos-13
     steps:
       - name: Check-out repository
         uses: actions/checkout@v4
